@@ -377,10 +377,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49d801d064134e346b3583c7fdb83259, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1386956027}
+      addedObject: {fileID: 1386956029}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49d801d064134e346b3583c7fdb83259, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1386956026}
+      addedObject: {fileID: 1386956030}
     - targetCorrespondingSourceObject: {fileID: -2356915838762956452, guid: 49d801d064134e346b3583c7fdb83259, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2082242837}
@@ -390,7 +390,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 49d801d064134e346b3583c7fdb83259, type: 3}
   m_PrefabInstance: {fileID: 1233684020}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1386956026
+--- !u!4 &1386956028 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 49d801d064134e346b3583c7fdb83259, type: 3}
+  m_PrefabInstance: {fileID: 1233684020}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1386956029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -399,20 +404,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1386956025}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5ca846639dfb046b37d8d99a4a3f5e, type: 3}
+  m_Script: {fileID: 11500000, guid: 615b193f2a51ab346bfd3d003dc48d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpHeight: 3
-  gravity: -9.81
+  player: {fileID: 0}
+  detectionRange: 2.46
+  moveSpeed: 2
+  moveRadius: 3
+  stoppingDistance: 0.2
+  idleTime: 2
   controller: {fileID: 0}
   animator: {fileID: 0}
-  groundCheck: {fileID: 0}
-  groundDistance: 0.4
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 0
---- !u!95 &1386956027
+--- !u!95 &1386956030
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -433,11 +436,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!4 &1386956028 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 49d801d064134e346b3583c7fdb83259, type: 3}
-  m_PrefabInstance: {fileID: 1233684020}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2082242835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2356915838762956452, guid: 49d801d064134e346b3583c7fdb83259, type: 3}
